@@ -1,0 +1,79 @@
+<!--
+ * CSCI 1170: Introduction to Web Design and Development
+ * Fall 2023
+ *
+ * This markup file contains the starting code for Assignment 4.
+ * 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A4: Data from JSON Data Source</title>
+
+	<!-- link to the main CSS file -->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+	<header id="page-header">
+		<!-- This img source from : flickr by Joe Ross is licensed under CC BY-SA 4.0. To view a copy of this license, visithttps://www.flickr.com/photos/joeross/6857448919/in/photostream/ . Date accessed: 12/6/2023 -->
+
+		<img id="banner-img" src="img/6857448919_8a5aa5c457_q.jpg" alt="banner-img">
+		<section id = header-text>
+			<h1 id = university-name> International Resturant </h1>
+		
+		</section>
+		<form  id="header-search" action="index.html" method="get">
+			<div class="search-widgets">
+					
+				<input type="text" id="i-message">
+				
+				<input type="button" value="Search">
+			</div>
+			
+	
+	</form>
+	<div id="header-nav" >
+               
+		<a class="head-link" href="index.html">Home</a>
+		<a class="head-link" href="#">Academics</a>
+		<a class="head-link" href="#">Contact</a>
+		<a class="head-link" href="files.html">Files</a>
+
+
+	</div> 
+	</header>
+
+
+	<main id="page-main">
+		<div class="search-widgets">
+			<input type="text" id="search" placeholder="Dish Name...">
+			<button id="filterButton">Filter Results</button>
+		</div>
+		
+		<div id="table-con">
+		<table id="main-table"></table>
+		</div>
+	</main>
+	<footer id="page-footer">
+		<div>
+		<p id="footer-text">2023 International Menu</p>
+	</div>
+	<div>
+	<nav >
+			<ul id="footer-list" >
+				<li><a href="index.html">About</a></li>
+				<li><a href="#">Resources</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="files.html">Files</a></li>
+			</ul>
+		</nav>
+	</div>
+	</footer>
+	<script src="js/data-restaurant.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
